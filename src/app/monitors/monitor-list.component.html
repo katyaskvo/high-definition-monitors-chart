@@ -1,131 +1,129 @@
-<table class="table table-responsive table-hover">
+<table class="table table-responsive table-hover" *ngIf="monitors && monitors.length">
     <thead>
       <tr>
         <th>Brand</th>
-        <th>Dell</th>
+        <th *ngFor="let monitor of monitors">{{ monitor.brand }}</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th>Model</th>
-        <td>UltraSharp 32 Ultra HD 8K Monitor (UP3218K)</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.model }}</td>
       </tr>
       <tr>
         <th>Image</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.image }}</td>
       </tr>
       <tr>
         <th>Link for more info</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.info-link }}</td>
       </tr>
       <tr>
         <th>Street price</th>
-        <td>USD 3900</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.street-price }}</td>
       </tr>
       <tr>
         <th>Diagonal size</th>
-        <td>31.5"</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.diagonal }}</td>
       </tr>
       <tr>
         <th>Native Resolution</th>
-        <td>7680 x 4320</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.resolution }}</td>
       </tr>
       <tr>
         <th>Contrast</th>
-        <td>1300:1</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.contrast }}</td>
       </tr>
       <tr>
         <th>Response</th>
-        <td>6 ms (gray-to-gray)</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.response }}</td>
       </tr>
       <tr>
         <th>Viewing angle</th>
-        <td>178</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.viewing-angle }}</td>
       </tr>
       <tr>
         <th>Brightness</th>
-        <td>400 cd/m²</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.brightness }}cd/m²</td>
       </tr>
       <tr>
         <th>Color</th>
-        <td>1.07 billion</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.color }}</td>
       </tr>
       <tr>
         <th>Pixel Pitch</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.pixel-pitch }}</td>
       </tr>
       <tr>
         <th>I/O Ports</th>
-        <td>
-          USB 3.0 hub (USB 3.0 downstream (Type A)USB 3.0 downstream (Type A (power only))USB 3.0 upstream (Type B)Audio line-out )
-        </td>
+        <td *ngFor="let monitor of monitors">{{ monitor.io-ports }}</td>
       </tr>
       <tr>
         <th>Card reader</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.card-reader }}</td>
       </tr>
       <tr>
         <th>Position adjustments</th>
-        <td>Height 4.7 in, pivot (rotation) 90, swivel 60, tilt -5/+21, wall mount mount 100 x 100 mm</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.position-adjustment }}</td>
       </tr>
       <tr>
         <th>Look-up table</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.look-up-table }}</td>
       </tr>
       <tr>
         <th>Dual view mode</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.dual-view-mode }}</td>
       </tr>
       <tr>
         <th>Video ports</th>
-        <td>2 x DisplayPort</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.video-ports }}</td>
       </tr>
       <tr>
         <th>Dimentions</th>
-        <td>With stand - width: 28.4 in - depth: 8.5 in - height: 24.3 in, Without stand - width: 28.4 in - depth: 2.1 in - height: 16.6 inIPS</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.dimentions }}</td>
       </tr>
       <tr>
         <th>Release date</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.release-date }}</td>
       </tr>
       <tr>
         <th>Affiliate link</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.affiliate-link }}</td>
       </tr>
       <tr>
         <th>Review Links</th>
-        <td></td>
+        <td *ngFor="let monitor of monitors">{{ monitor.review-links }}</td>
       </tr>
       <tr>
         <th>Panel type</th>
-        <td>IPS</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.panel-type }}</td>
       </tr>
       <tr>
         <th>Aspect ratio</th>
-        <td>Widescreen - 16:9</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.aspect-ratio }}</td>
       </tr>
       <tr>
         <th>Refresh rate</th>
-        <td>60 Hz</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.refresh-rate }}</td>
       </tr>
       <tr>
         <th>Screen coating</th>
-        <td>Anti-reflective, 2H Hard Coating</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.screen-coating }}</td>
       </tr>
       <tr>
         <th>Features</th>
-        <td>100% Adobe RGB color gamut, 100% sRGB color gamut, 98% DCI-P3, 100% Rec 709 color gamut, Security lock slot, anti-theft protection</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.features }}</td>
       </tr>
       <tr>
         <th>Power</th>
-        <td>87 Watt, AC 120/230 V (50/60 Hz)</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.power }}</td>
       </tr>
       <tr>
         <th>Warranty</th>
-        <td>3-Years Advanced Exchange Service and Premium Panel Guarantee</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.warranty }}</td>
       </tr>
       <tr>
         <th>Manufacturer part</th>
-        <td>095P9, Dell part 210-ALEZ</td>
+        <td *ngFor="let monitor of monitors">{{ monitor.manufacturer-part }}</td>
       </tr>
 </table>
